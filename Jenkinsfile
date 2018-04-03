@@ -8,6 +8,9 @@ node {
     stage 'Test'
     sh "./gradlew test"
 
+    stage 'IntegrationTest'
+    sh ./gradlew integrationTest
+
     stage 'Build'
     sh "./gradlew build"
 
